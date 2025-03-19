@@ -2,15 +2,8 @@ import os
 import time
 import threading
 import pygetwindow as gw
+import web_dict
 
-web_dict = {
-    "LinkedIn":"https://www.linkedin.com/jobs/search/",
-    "Overleaf": "https://www.overleaf.com/project",
-    "Handshake": "https://app.joinhandshake.com/stu/postings",
-    "ChatGPT": "https://chatgpt.com/c/67b13719-21fc-8008-9d0f-068073f398de",
-    "Notion": "https://www.notion.so",
-    "Youtube": "https://www.youtube.com"
-}
 def arrange_linkedin_overleaf():
     os.system(f'start chrome --new-window {web_dict["LinkedIn"]} --new-tab {web_dict["Handshake"]} --new-tab {web_dict["Overleaf"]}')
     time.sleep(1)  # Allow time for the window to open
