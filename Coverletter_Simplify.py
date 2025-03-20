@@ -5,9 +5,10 @@ from ollama import ChatResponse
 import sys
 import re  # Import regex to clean file names
 import keyboard  # Library to detect keypress
+from word_files import word_files
 
 # Define the Word document path
-word_file = r"C:\Users\RGMatr1x\Downloads\Job_Application_Files\CoverLetter\Cover_Letter_with_Header.docx"
+word_file = word_files
 MODEL = 'qwen2.5:0.5b'
 
 
